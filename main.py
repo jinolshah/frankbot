@@ -1,6 +1,4 @@
 import discord
-import json
-from keep_alive import keep_alive
 
 client = discord.Client()
 
@@ -17,5 +15,4 @@ async def on_message(message):
   if messagecon.startswith('heyo'):
     await message.channel.send('Heyooo! Suuup!')
 
-keep_alive()
 client.run(process.env.BOT_TOKEN)
