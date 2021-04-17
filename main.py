@@ -16,4 +16,4 @@ async def on_message(message):
   if messagecon.startswith('heyo'):
     await message.channel.send('Heyooo! Suuup!')
 
-client.run(os.environ['BOT_TOKEN'])
+client.run(os.getenv('BOT_TOKEN'))
